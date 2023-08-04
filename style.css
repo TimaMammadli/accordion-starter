@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to right, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.main {
+  margin: 5% 15%;
+  display: flex;
+  overflow: hidden;
+  background-color: white;
+  padding: 4rem 4rem 0 0 ;
+  border-radius: 15px;
+}
+.left {
+  flex: 45%;
+  background: url(./images/bg-pattern-desktop.svg);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: left -3rem top -2rem;
+  background-size: contain;
+}
+
+.right {
+  flex: 55%; 
+  margin-top: 30px;
+  margin-left: 80px;      
+}
+
+.iwoman {
+  position: relative;
+  left: -15%;
+  margin-bottom: 15%;
+  align-items: center;
+}
+
+.ibox {
+  position: absolute;
+  margin-left: -597px;
+  margin-top: 139px;
+}
+
+.ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 30px;
+  border-bottom: 1px solid darkgray;
+  cursor: pointer; /* İçeriğe tıklayabilmek için imleci el şekline getiriyoruz */
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+span.content {
+  display: none; /* Başlangıçta içerikleri gizliyoruz */
+}
+
+li.active span.content {
+  display: block; /* İçeriği göstermek için bu sınıfı kullanıyoruz */
+}
